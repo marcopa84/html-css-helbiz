@@ -88,7 +88,36 @@ header {
   font-size: 1.5em;
   margin-bottom: 0.8rem;
 }
-
+/* INIZIO MAIN */
+.presentation{
+  text-align: center;
+}
+.presentation .box_proprieties{
+  background-color: #FAFAFA;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.presentation .box_title{
+  width: 350px;
+  padding-top: 100px;
+}
+.presentation h2{
+  font-size: 2rem;
+  margin: 30px 0;
+}
+.presentation a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+}
+.presentation a:after{
+  content: '>';
+  margin-left: 20px;
+}
+.presentation .box_img{
+  width: 350px;
+  padding-top: 100px;
+}
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .header-top {
     padding: 0 2%;
@@ -112,14 +141,14 @@ header {
   body {
     font-size: 8px;
   }
+  .header-top {
+    padding: 0 2%;
+  }
   .xs_display_block {
     display: block;
   }
   .xs_display_none {
     display: none;
-  }
-  .header-top {
-    padding: 0 2%;
   }
   .jumbo_text h1 {
     font-size: 3.5em;
