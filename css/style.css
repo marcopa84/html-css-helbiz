@@ -4,7 +4,10 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 10px;
-  background-color: red;
+  /* background-color: red; */
+}
+.text_center{
+  text-align: center;
 }
 
 .container_1000 {
@@ -89,16 +92,20 @@ header {
   margin-bottom: 0.8rem;
 }
 /* INIZIO MAIN */
-.presentation{
-  text-align: center;
-}
-.presentation .box_proprieties{
+/* --> Presentation */
+.presentation .boxes{
   background-color: #FAFAFA;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.presentation .boxes_left{
+  margin-right: 30px;
+}
+.presentation .boxes_right{
+  margin-left: 30px;
 }
 .presentation .box_title{
-  width: 350px;
+  height: 150px;
   padding-top: 100px;
 }
 .presentation h2{
@@ -115,10 +122,42 @@ header {
   margin-left: 20px;
 }
 .presentation .box_img{
-  width: 350px;
+  height: 600px;
   padding-top: 100px;
 }
+/* --> who */
+.who{
+  position: relative;
+}
+.who .slider{
+  height: 600px;
+  background-image: url(../img/HelbizBanner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.who .slider_iphone{
+  height: 600px;
+  margin-top: 300px;
+}
+.who .slider_text{
+  margin-top: 600px;
+}
+.who .slider_text h2{
+  font-size: 4rem;
+  margin: 50px 0;
+}
+.who .slider_text h3{
+  font-size: 2.5rem;
+  margin-top: 50px;
+}
+.who .slider_text h4{
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+
 @media screen and (max-width: 992px) and (min-width: 768px) {
+  /* regole header */
   .header-top {
     padding: 0 2%;
   }
@@ -135,12 +174,42 @@ header {
   .jumbo_text a img {
     width: 100%;
   }
+  /* regole main */
+  .presentation .box_title{
+    height: 115px;
+    padding-top: 80px;
+  }
+  .presentation h2{
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  .presentation a{
+    font-size: 1.3rem;
+  }
+  .presentation .box_img{
+    height: 400px;
+    padding-top: 80px;
+  }
+  /* / presentation */
+  .who .slider_text h2{
+    font-size: 3rem;
+  }
+  .who .slider_text h3{
+    font-size: 2rem;
+  }
+  .who .slider_text h4{
+    font-size: 1.5rem;
+  }
+  .who .col-md-4{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
   body {
     font-size: 8px;
   }
+  /* regole header */
   .header-top {
     padding: 0 2%;
   }
@@ -165,4 +234,32 @@ header {
   .jumbo_text a img {
     width: 100%;
   }
+  /* regole main */
+  .presentation .boxes_left{
+    margin-right: 0;
+  }
+  .presentation .boxes_right{
+    margin-left: 0;
+  }
+  .presentation .boxes{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .presentation .box_title{
+    height: 115px;
+    padding-top: 80px;
+  }
+  .presentation h2{
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  .presentation a{
+    font-size: 1.2rem;
+  }
+  .presentation .box_img{
+    height: 400px;
+    padding-top: 80px;
+  }
+  /* / presentation */
+
 }
