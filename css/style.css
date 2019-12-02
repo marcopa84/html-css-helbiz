@@ -6,6 +6,9 @@ body {
   font-size: 10px;
   /* background-color: red; */
 }
+a:visited{
+  text-decoration: none;
+}
 .text_center{
   text-align: center;
 }
@@ -98,10 +101,10 @@ header {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.presentation .boxes_left{
+.boxes_left{
   margin-right: 30px;
 }
-.presentation .boxes_right{
+.boxes_right{
   margin-left: 30px;
 }
 .presentation .box_title{
@@ -154,7 +157,75 @@ header {
   font-size: 2rem;
   margin-top: 10px;
 }
+/* --> blocks */
+.blocks .one_row{
+  position: relative;
+  background-image: url(../img/ScooterHelbiz-2400.jpg);
+  background-size: cover;
+  height: 500px;
+}
+.blocks .one_row_text{
+  width: 33%;
+  position: absolute;
+  top:20%;
+  right: 9%;
+  text-align: center;
+  color: #fff;
+}
+.blocks h2{
+  font-size: 5rem;
+}
+.blocks h3{
+  font-size: 2rem;
+}
+.blocks a{
+  font-size: 2.5rem;
+  line-height: 7rem;
+  text-decoration: none;
+  display: block;
+}
+.blocks a:after{
+  content: '>';
+  margin-left: 20px;
+}
+.blocks .two_row_left{
+  position: relative;
+  height: 600px;
+  margin-top: 60px;
+  background: linear-gradient(#41566a,#252f38);
+}
+.blocks .two_row_left img{
+  position: absolute;
+  bottom: 0;
+  width: 97%;
+}
+.blocks .two_row_right{
+  position: relative;
+  height: 600px;
+  margin-top: 60px;
+  background-image: url(../img/Cities-1500.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
+.blocks .two_row_left_text,
+.blocks .two_row_right_text{
+  width: 100%;
+  position: absolute;
+  top:50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+}
+.blocks .two_row_left_text h2,
+.blocks .two_row_right_text h2{
+  margin: 10px 0;
+}
+.blocks .two_row_left_text h3,
+.blocks .two_row_right_text h3{
+  margin: 15px 0;
+}
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   /* regole header */
