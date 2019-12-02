@@ -1,0 +1,139 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  background-color: red;
+}
+
+.container_1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.menu_inline {
+  list-style: none;
+}
+.menu_inline li {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.menu_inline li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+header {
+  background-color: white;
+}
+.header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  line-height: 80px;
+  background-color: white;
+}
+.header_logo {
+  vertical-align: middle;
+}
+.header_menu li{
+  text-align: left;
+  margin-right: 25px;
+}
+.header_menu_lang li:not(:last-child) {
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+.ico_hamburger {
+  float: right;
+  font-size: 3.7em;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.lg_display_none {
+  display: none;
+}
+.lg_display_block {
+  display: block;
+}
+
+.jumbo {
+  position: relative;
+  height: 400px;
+  margin-top: 80px;
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.jumbo_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  text-align: center;
+  color: white;
+}
+.jumbo_text h1 {
+  font-size: 4em;
+  margin-bottom: 0.8rem;
+}
+.jumbo_text p {
+  font-size: 1.5em;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .header-top {
+    padding: 0 2%;
+  }
+  .md_display_block {
+    display: block;
+  }
+  .md_display_none {
+    display: none;
+  }
+  .jumbo_text a {
+    width: calc(100% / 4);
+    display: inline-block;
+  }
+  .jumbo_text a img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 8px;
+  }
+  .xs_display_block {
+    display: block;
+  }
+  .xs_display_none {
+    display: none;
+  }
+  .header-top {
+    padding: 0 2%;
+  }
+  .jumbo_text h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.8rem;
+  }
+  .jumbo_text p {
+    font-size: 2em;
+    margin-bottom: 0.8rem;
+  }
+  .jumbo_text a {
+    width: calc(100% / 5);
+    display: inline-block;
+  }
+  .jumbo_text a img {
+    width: 100%;
+  }
+}
